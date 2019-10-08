@@ -1,0 +1,44 @@
+body {
+  background-color: #444;
+}
+
+li {
+  text-align: center;
+  display: inline;
+  margin: 10px;
+  padding: 18px;
+}
+
+li:hover {
+  background-color: cadetblue;
+  transition: 0.3s;
+}
+.navbar-fixed-top {
+  background-color: #333;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000000;
+}
+
+.jumbotron {
+  margin-top: 30px;
+  background-color: cadetblue;
+  color: #fff;
+  text-shadow: 3px 1px 1px #000000;
+  border-style: solid;
+  border-color: #333;
+}
+
+.label {
+  background-color: cadetblue;
+  color: #fff;
+  border-style: solid;
+  border-color: #333;
+}
+
+.label h1 {
+  text-shadow: 3px 1px 1px #000000;
+}
+
+.label p {
+  color: #000000;
+}
