@@ -1,0 +1,21 @@
+{% extends 'base.html' %} {% block content %}
+<form method="POST" action="/guitars">
+  <fieldset>
+    <legend>New Guitar</legend>
+    <!-- name -->
+    <p>
+      <label for="name">name</label><br />
+      <input type="text" name="name" />
+    </p>
+    <p>
+      <label for="description">Description</label><br />
+      <input type="text" name="description" />
+    </p>
+  </fieldset>
+
+  <!-- BUTTON -->
+  <p>
+    <button type="submit">Post</button>
+  </p>
+</form>
+{% endblock %}

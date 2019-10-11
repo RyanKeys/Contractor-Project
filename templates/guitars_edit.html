@@ -1,0 +1,28 @@
+{% extends 'base.html' %} {% block content %}
+<form method="POST" action="/guitars/{{ guitar._id }}">
+  <fieldset>
+    <legend>Edit guitar</legend>
+    <!-- name -->
+    <p>
+      <label for="guitar-name">name</label><br />
+      <input id="name" type="text" name="name" value="{{ guitar.name }}" />
+    </p>
+
+    <!-- DESCRIPTION -->
+    <p>
+      <label for="description">Description</label><br />
+      <input
+        id="description"
+        type="text"
+        name="description"
+        value="{{ guitar.description }}"
+      />
+    </p>
+  </fieldset>
+
+  <!-- BUTTON -->
+  <p>
+    <button type="submit">Save guitar</button>
+  </p>
+</form>
+{% endblock %}

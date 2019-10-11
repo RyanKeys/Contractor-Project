@@ -42,3 +42,13 @@ li:hover {
 .label p {
   color: #000000;
 }
+
+.guitar_showcase {
+  margin: 45px;
+}
+
+.navbar-styling {
+  top: 0;
+  position: fixed;
+  width: 130%;
+}

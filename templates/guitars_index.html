@@ -1,0 +1,15 @@
+{% extends 'base.html' %} {% block content %}
+<div class="container"></div>
+  <h1>Guitars</h1>
+  <a href="/guitars/new">New Posting</a>
+  <div class="row">
+    {% for guitar in guitars %}
+    <div class="column guitar_showcase">
+      <h2><a href="/guitars/{{ guitar._id}}">{{ guitar.name }}</a></h2>
+      <p>{{ guitar.description }}</p>
+      <img src="../static/GuitareClassique5.png" width="70"/>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

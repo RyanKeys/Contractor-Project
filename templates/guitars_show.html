@@ -1,0 +1,11 @@
+{% extends 'base.html' %} {% block content %}
+<h1>{{ guitar.name }}</h1>
+<h2>{{ guitar.description }}</h2>
+<a href="/">Back to Home</a>
+<p><a href="/guitars/{{ guitar._id }}/edit">Edit</a></p>
+<p>
+    <form method='POST' action='/guitars/{{ guitar._id }}/delete'>
+    <button type='submit'>Delete</button>
+</form>
+</p>
+{% endblock %}
